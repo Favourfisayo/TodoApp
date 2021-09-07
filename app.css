@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+h2,h3 {
+    font-weight: 200;
+}
+
+.app--wrapper {
+    overflow: scroll;
+    width: 80%;
+    height: 550px;
+    padding: 20px 30px;
+    background: #f1f5f9;
+    margin: 50px auto;
+}
+
+.app--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px auto;
+}
+
+hr {
+    border: 1px solid #e2e8f0;
+}
+
+.app--header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.app--todo--section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.app--todo--section #task {
+    padding: 10px 20px;
+    width: 35%;
+    border: 1px solid #c4b5fd;
+    background: #c4b5fd;
+    color: white;
+    
+}
+
+.app--todo--section h3 {
+    margin: 20px;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.app--todo--section #task[placeholder] {
+    text-align: center;
+}
+
+#add--task {
+    padding: 10px 20px;
+    border: 1px solid #8b5cf6;
+    background: #8b5cf6;
+    margin: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+#add--task:hover {
+    background: #7135ff;
+    transition: .2s ease;
+}
+.parentDiv {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 90%;
+    height: 30px;
+    padding: 10px 15px;
+    background-color: #e7e5e4;
+    color: #4f46e5;
+    margin: 10px;
+}
+.btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 50px;
+    width: 20%;
+    padding: 10px 15px;
+    border: 1px solid #0ea5e9;
+    background: #0ea5e9;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.btn:hover {
+    background: #008cce;
+    transition: .2s ease;
+}
+.task--name {
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+    .app--todo--section #task  {
+        width: 80%;
+        margin-top: 30px;
+    }
+    .app--todo--section h3 {
+        display: none;
+    }
+}
